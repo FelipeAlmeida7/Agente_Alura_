@@ -1,0 +1,38 @@
+{
+  "nome": "API de Clientes",
+  "versao": "v2",
+  "base_url": "https://api.novaaurora.example/v2",
+  "autenticacao": {
+    "tipo": "Bearer token (OAuth2 client credentials)",
+    "expiracao_token_minutos": 60
+  },
+  "limite_requisicoes": "100 requisições por minuto por chave de API",
+  "endpoints": [
+    {
+      "metodo": "GET",
+      "caminho": "/clientes",
+      "descricao": "Lista clientes com paginação (máximo de 100 por página)"
+    },
+    {
+      "metodo": "GET",
+      "caminho": "/clientes/{id}",
+      "descricao": "Detalha um cliente"
+    },
+    {
+      "metodo": "POST",
+      "caminho": "/clientes",
+      "descricao": "Cria um cliente. Campos obrigatórios: razao_social, cnpj, email"
+    },
+    {
+      "metodo": "DELETE",
+      "caminho": "/clientes/{id}",
+      "descricao": "Anonimiza os dados do cliente conforme a LGPD"
+    }
+  ],
+  "codigos_erro": {
+    "401": "Token inválido ou expirado",
+    "404": "Cliente não encontrado",
+    "429": "Limite de requisições excedido"
+  },
+  "responsavel": "Time de Plataforma (canal #plataforma)"
+}

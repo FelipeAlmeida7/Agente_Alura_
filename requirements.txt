@@ -1,0 +1,9 @@
+cohere[oci]>=7.0
+streamlit>=1.40
+numpy
+pypdf
+python-docx
+openpyxl
+python-pptx
+beautifulsoup4
+python-dotenv
