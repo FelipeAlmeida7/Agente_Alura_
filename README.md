@@ -1,4 +1,4 @@
-# 🤖 Agente Corporativo de IA
+# Agente Corporativo de IA
 
 Agente de IA desenvolvido em Python e Streamlit para responder perguntas com base em documentos da empresa.
 O agente também mostra as fontes utilizadas em cada resposta.
