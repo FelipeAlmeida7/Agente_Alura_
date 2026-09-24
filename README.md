@@ -39,7 +39,6 @@ agente-corporativo/
 │   ├── loaders.py
 │   └── rag.py
 ├── requirements.txt
-├── .env.example
 ├── Dockerfile
 └── README.md
 ```
@@ -70,13 +69,6 @@ Para instalar:
 ```bash
 pip install -r requirements.txt
 ```
-
-### .env.example
-
-Contém um exemplo das configurações necessárias para utilizar a OCI Generative AI.
-
-As informações reais devem ser colocadas no arquivo `.env`.
-
 ## Documentos
 
 O agente pode utilizar diferentes tipos de documentos como fonte de informação, como:
@@ -158,7 +150,5 @@ As respostas são baseadas nos documentos disponíveis na base de conhecimento.
 * RAG
 * Docker
 
-
-A aplicação será disponibilizada na porta `8501`.
 ### NAO CONSEGUI COLOCAR UMA FOTO OU IMAGEM RODANDO NA ORACLE CLOUD
 Tentei criar uma conta mas n conseguia de forma alguma, ate colocando cartao de credito e n foi
